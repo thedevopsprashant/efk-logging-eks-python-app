@@ -1,6 +1,6 @@
 # Kubernetes Logging with EFK: Fluent Bit, Elasticsearch & Kibana on EKS
 
-## how to set up end-to-end Kubernetes log monitoring using the EFK stack on Amazon EKS.
+## How to set up end-to-end Kubernetes log monitoring using the EFK stack on Amazon EKS.
 we’ll deploy Fluent Bit, Elasticsearch, and Kibana to collect, store, and visualize cluster logs effectively.
 
 
@@ -278,6 +278,10 @@ kubectl apply -f 2-app.yml -n microservice
 ```
 
 ---
+### Ackowledgement 
+Special thanks to Harish shetty for the code and blog and Contributing to the Community.
+---
+
 
 ## 🧼 Clean Up
 
@@ -289,6 +293,3 @@ eksctl delete cluster -f 0-eks-creation-config.yml
 ```
 kubectl delete pvc elasticsearch-master-elasticsearch-master-0 -n efk-logging
 
----
-### Ackowledgement 🙏🏻
-Special thanks to Harish shetty for the code and blog and Contributing to the Community.
