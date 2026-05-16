@@ -278,10 +278,12 @@ kubectl apply -f 2-app.yml -n microservice
 ```
 
 ---
+
 ### Ackowledgement 
 Special thanks to Harish shetty for the code and blog and Contributing to the Community.
----
 
+
+---
 
 ## 🧼 Clean Up
 
