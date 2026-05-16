@@ -275,6 +275,7 @@ kubectl describe pod elasticsearch-master-0 | grep -i "controlled by"
 ```bash
 kubectl create namespace microservice
 kubectl apply -f 2-app.yml -n microservice
+kubectl get svc -n microservice
 ```
 
 ---
@@ -293,5 +294,4 @@ helm uninstall elasticsearch -n efk-logging
 helm uninstall kibana -n efk-logging
 eksctl delete cluster -f 0-eks-creation-config.yml
 ```
-kubectl delete pvc elasticsearch-master-elasticsearch-master-0 -n efk-logging
 
